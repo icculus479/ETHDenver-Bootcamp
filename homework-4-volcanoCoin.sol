@@ -41,7 +41,7 @@ contract VolcanoCoin {
 
     //Create a modifier to ensure the linked function will only process if the Owner initiates the request
     //Adding a require so an error message is displayed if the address submitting is not the Owner.
-    // .. vs having the function not work but 
+    // .. vs having the function not work but also not show an error that it was not eligble
     modifier checkOwner(){
         require(msg.sender == owner, "Permission Denied");
         if(msg.sender == owner){
