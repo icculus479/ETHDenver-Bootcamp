@@ -135,12 +135,4 @@ function getVoterRegistrationStatus() public view returns (bool) {
     return VoterRegistrations[msg.sender].registered;
 }
 
-
-
-}
-
-
-
-
-
 }
